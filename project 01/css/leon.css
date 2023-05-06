@@ -1,6 +1,7 @@
 /* Start Variables */
 :root {
   --main-color: #10cab7;
+  --border: 1px solid #ddd;
 }
 
 /* End Variables */
@@ -49,6 +50,7 @@ body {
 /* Start Header  */
 .header {
   padding: 20px;
+  border-bottom: var(--border);
 }
 
 .header .container {
