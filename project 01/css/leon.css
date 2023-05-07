@@ -1,7 +1,10 @@
 /* Start Variables */
 :root {
   --main-color: #10cab7;
+  --color2: #f6f6f6;
+  --font-color: #24484f;
   --border: 1px solid #ddd;
+  --border-radius: 7px;
 }
 
 /* End Variables */
@@ -79,7 +82,7 @@ body {
 }
 
 .header .links .icon span {
-  background-color: #333;
+  background-color: var(--font-color);
   margin-bottom: 5px;
   height: 2px;
 }
@@ -101,7 +104,9 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #f6f6f6;
+  background-color: var(--color2);
+  border: var(--border);
+  border-radius: var(--border-radius);
   position: absolute;
   right: 0;
   min-width: 200px;
@@ -114,7 +119,7 @@ body {
   content: "";
   border-width: 10px;
   border-style: solid;
-  border-color: transparent transparent #f6f6f6 transparent;
+  border-color: transparent transparent #ddd transparent;
   position: absolute;
   right: 5px;
   top: -20px;
@@ -128,7 +133,7 @@ body {
   display: block;
   padding: 15px;
   text-decoration: none;
-  color: #333;
+  color: var(--font-color);
   transition: 0.3s;
 }
 
@@ -137,7 +142,7 @@ body {
 }
 
 .header .links ul li:not(:last-child) a {
-  border-bottom: 1px solid #ddd;
+  border-bottom: var(--border);
 }
 
 /* End Header  */
@@ -173,3 +178,41 @@ body {
 }
 
 /* End Landing Section */
+
+/* Start Features Section  */
+
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--color2);
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.features .feat {
+  padding: 20px;
+  text-align: center;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  background-color: #fff;
+}
+
+.features .feat i {
+  color: var(--main-color);
+}
+
+.features .feat h3 {
+  font-weight: 800;
+  margin: 30px 0;
+}
+
+.features .feat p {
+  line-height: 1.8;
+  color: #777;
+}
+
+/* End Features Section  */
