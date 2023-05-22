@@ -8,6 +8,9 @@
   <title>Leon Template 01</title>
   <!-- Render All Elements Normally -->
   <link rel="stylesheet" href="css/normalize.css" />
+  <!-- google icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- Font Awesome Library -->
   <link rel="stylesheet" href="css/all.min.css" />
   <!-- Main CSS File -->
@@ -21,6 +24,9 @@
 </head>
 
 <body>
+
+
+
   <!-- Start Header -->
   <div class="header">
     <div class="container">
@@ -48,6 +54,22 @@
       <h1>Hello There</h1>
       <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
     </div>
+    <!-- Animated background -->
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- Animated background -->
   </div>
   <!-- End Landing Section-->
 
@@ -55,17 +77,23 @@
   <div class="features">
     <div class="container">
       <div class="feat">
-        <i class="fas fa-magic fa-3x"></i>
+        <span class="material-symbols-outlined fa-beat icon">
+          auto_fix
+        </span>
         <h3>Tell Us Your Idea</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab.</p>
       </div>
       <div class="feat">
-        <i class="far fa-gem fa-3x"></i>
+        <span class="material-symbols-outlined fa-beat icon">
+          diamond
+        </span>
         <h3>Tell Us Your Idea</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab.</p>
       </div>
       <div class="feat">
-        <i class="fas fa-globe-asia fa-3x"></i>
+        <span class="material-symbols-outlined fa-beat icon">
+          public
+        </span>
         <h3>Tell Us Your Idea</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab.</p>
       </div>
@@ -74,13 +102,124 @@
   <!-- End Features Section -->
 
   <!-- Start Sevices Section  -->
-  <div class="services">
+  <div class="services" id="services">
     <div class="container">
       <h2 class="special-heading">Services</h2>
       <p>Don't be busy, be productive</p>
+
+      <div class="services-content">
+        <div class="col">
+          <div class="serv">
+            <span class="material-symbols-outlined  icon">
+              palette
+            </span>
+            <div class="text">
+              <h3>Graphic Design</h3>
+              <p>Graphic design is the process of visual communication and problem-solving using one or more of
+                typography, photography and illustration.</p>
+            </div>
+          </div>
+          <div class="serv">
+            <span class="material-symbols-outlined  icon">
+              diamond
+            </span>
+            <div class="text">
+              <h3>UI & UX</h3>
+              <p>Process of enhancing user satisfaction with a product by improving the usability, accessibility, and
+                pleasure provided in the interaction.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="serv">
+            <span class="material-symbols-outlined  icon">
+              dashboard
+            </span>
+            <div class="text">
+              <h3>Web Design</h3>
+              <p>Web design encompasses many different skills and disciplines in the production and maintenance of
+                websites.</p>
+            </div>
+          </div>
+          <div class="serv">
+            <span class="material-symbols-outlined  icon">
+              design_services
+            </span>
+            <div class="text">
+              <h3>Web Development</h3>
+              <p>Web development is a broad term for the work involved in developing a web site for the Internet or an
+                intranet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="image image-column">
+            <img src="images/services.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
   <!-- End Sevices Section  -->
+
+  <!-- Start Portfolio Section -->
+  <div class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="special-heading">Portfolio</h2>
+      <p>If you do it right, it will last forever.</p>
+      <div class="portfolio-content">
+        <div class="card">
+          <img src="images/portfolio-1.jpg" alt="">
+          <div class="info">
+            <h3>Project Here</h3>
+            <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/portfolio-2.jpg" alt="">
+          <div class="info">
+            <h3>Project Here</h3>
+            <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/portfolio-3.jpg" alt="">
+          <div class="info">
+            <h3>Project Here</h3>
+            <p>My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio Section -->
+
+  <!-- Strat About Section -->
+  <div class="about" id="about">
+    <div class="container">
+      <h2 class="special-heading">About</h2>
+      <p>Less is more work</p>
+      <div class="about-content">
+        <div class="image">
+          <img src="images/about.jpg" alt="">
+        </div>
+        <div class="text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse omnis sed molestias harum. Repudiandae
+            aliquam cum at facilis hic saepe maxime doloribus inventore. Natus, quasi laboriosam cupiditate
+            exercitationem veritatis autem!</p>
+          <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse omnis sed molestias harum. Repudiandae
+            aliquam cum at facilis hic saepe maxime doloribus inventore. Natus, quasi laboriosam cupiditate
+            exercitationem veritatis autem!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About Section -->
+
+
+
 </body>
 
 </html>
