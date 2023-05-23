@@ -1,15 +1,39 @@
+
+/*------------------------------------------------------------------
+[Main Stylesheet]
+
+Project:    Leon
+Version:    1.0.0
+-------------------------------------------------------------------*/
+
+
+
 /* #region - Variables */
+
+/*---------------------------------------
+     CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
 :root {
-  --main-color: #10cab7;
-  --second-color: #2c4775;
-  --color2: #f6f6f6;
-  --font-color: #24484f;
-  --section-padding: 60px;
-  --main-duration: 0.3s
+  --main-color:                   #10cab7;
+  --second-color:                 #2c4775;
+  --color2:                       #f6f6f6;
+  --font-color:                   #24484f;
+  --section-padding:               60px;
+  --main-duration:                 0.3s;
+
+  --body-font-family:             "Work Sans", sans-serif;
 }
 
+
 /* #endregion - Variables */
+
+
 /* #region - Global Rules */
+
+/*---------------------------------------
+              Global Rules
+-----------------------------------------*/
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -21,7 +45,7 @@ html{
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--body-font-family);
 }
 
 .container {
@@ -60,6 +84,10 @@ body {
 /*#endregion - Global Rules*/
 
 /* #region - Components */
+
+/*---------------------------------------
+              Components 
+-----------------------------------------*/
 
 /* special-heading */
 .special-heading {
@@ -154,6 +182,11 @@ button:hover,
 /* #endregion - Components */
 
 /* #region - Header */
+
+/*---------------------------------------
+              Header 
+-----------------------------------------*/
+
 .header {
   padding: 20px;
   border-bottom: var(--border);
@@ -249,6 +282,11 @@ button:hover,
 /* #endregion - Header  */
 
 /* #region - Landing */
+
+/*---------------------------------------
+              Landing 
+-----------------------------------------*/
+
 .landing {
   background-image: url(../images/landing.jpg);
   background-size: cover;
@@ -400,6 +438,10 @@ button:hover,
 
 /* #region - Features */
 
+/*---------------------------------------
+              Features 
+-----------------------------------------*/
+
 .features {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -435,6 +477,11 @@ button:hover,
 /* #endregion - Features Section  */
 
 /* #region - Sevices */
+
+/*---------------------------------------
+              Services
+-----------------------------------------*/
+
 .services {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -508,6 +555,11 @@ button:hover,
 /* #endregion - Sevices Section  */
 
 /* #region - Portfolio */
+
+/*---------------------------------------
+              Portfolio 
+-----------------------------------------*/
+
 .portfolio {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -546,6 +598,11 @@ button:hover,
 /* #endregion - Portfolio Section */
 
 /* #region - About */
+
+/*---------------------------------------
+              About
+-----------------------------------------*/
+
 .about {
   padding-top: var(--section-padding);
   padding-bottom: calc(var(--section-padding) + 60px);
@@ -627,6 +684,11 @@ line-height: 2;
 /* #endregion - About */
 
 /* #region - Contacts*/
+
+/*---------------------------------------
+              Contacts 
+-----------------------------------------*/
+
 .contacts {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -681,6 +743,11 @@ line-height: 2;
 /* #endregion - Contacts*/
 
 /* #region - Footer*/
+
+/*---------------------------------------
+              footer 
+-----------------------------------------*/
+
 .footer {
   background-color: var(--second-color);
   color: #fff;
